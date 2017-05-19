@@ -1,0 +1,150 @@
+  .header
+ {
+background-color:teal;
+ height:50px;
+ }
+ .header a
+ {
+ position:relative;
+ top:12px;
+ left:10px;
+  color:#f0f0f0;
+ }
+  .background img
+ {
+ width:100%;
+ }
+ .userView
+ {
+  min-height:200px;
+  }
+ .tabs
+ {
+ list-style:none;
+ width:100% !important;
+ margin-top:50px;
+ border:1px solid #f1f1f1;
+
+ }
+ .tabs li
+ {
+ float:left;
+ width:25%;
+ text-align:center;
+ padding:10px 0 10px 0;
+ vertical-align:middle;
+ }
+ .tabs li:hover
+ {
+ cursor:pointer;
+ }
+ .container-s
+ {
+ width:100%;
+ padding:0;
+ border-bottom:1px solid #85929e;
+ }
+ #jssor_1
+ {
+  border-bottom:1px solid #85929e;
+ }
+ .active
+ {
+ 
+ font-weight:bold;
+ }
+.hide
+ {
+ display:none;
+ }
+  .attendance
+ {
+ 
+ position:relative;
+ top:-100px;
+ left:-0.2%;
+ 
+ }
+ .right-1,.left-1
+ {
+ position:relative;
+ top:-12px;}
+ .right,.left
+ {
+ position:relative;
+ top:-12px;}
+ 
+ input
+ {
+ position: absolute !important;
+z-index: 100 !important;
+padding: 10px !important;
+margin:0 !important;
+bottom: 10px !important;
+right: 24px !important;
+border-radius: 20px !important;
+border: 1px solid #eeeeee !important;
+width: 90% !important;
+background-color:white !important;
+box-sizing:inherit !important;
+ }
+ #messenger
+ {
+ margin-top:20px;}
+ #chat-img
+ {
+ width:250px;
+ height:420px;
+ background-image:url("chat.png");
+ background-repeat:no-repeat;
+ background-size:contain;
+ margin:0 auto;
+ margin-top:20px;
+ }
+ #notice
+ {
+ 
+ }
+ #attendance
+ {
+ padding-right:15px;
+ 
+ }
+ #internal
+ {
+ padding-left:5px;
+ padding-right:5px;
+ }
+ #chat
+ {
+  padding-left:10px;
+ }
+ .sname
+ {
+text-align:center;
+font-size: 1.3em;
+font-weight: 600;
+color: #656565;
+ }
+ //animation svg
+    .pie_progress {
+      max-width: 160px;
+      margin: 10px auto;
+    }
+    @media all and (max-width: 768px) {
+      .pie_progress {
+        width: 80%;
+        max-width: 200px;
+		 margin: 10px auto;
+      }
+    }
+	
+	
+// dashboard items
+  i.material-icons.head-icon {
+    margin: 0 12px 0 0 !important;
+}
+   
+ 	
+	
+	

@@ -1,0 +1,29 @@
+ a:hover
+  {
+   text-decoration:none !important;
+  }
+  .circle
+  {
+   height:144px !important;
+   width:144px !important;   
+  }
+  .circle 
+  {
+  margin:auto !important;
+  }
+  #sidebar
+  {
+   margin-left:8px !important;
+  }
+  .brand-logo
+  {
+  font-size:1.5em !important;
+  }
+  nav
+  {
+  background-color:  #009b7d  !important;
+  }
+  #table
+  {
+	
+  }

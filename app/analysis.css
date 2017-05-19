@@ -1,0 +1,93 @@
+body
+  {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color:#f0f0f0;
+  }
+  .name
+  {
+  text-align:center;
+  font-size:1.5em;
+  font-weight:600;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin-top:20px;
+
+  }
+  .id
+  {
+    text-align:center;
+  font-size:1.1em;
+  font-weight:500;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin-top:10px;
+  }
+  circle
+  {
+  stroke-width:32px;
+  stroke:teal;
+  stroke-dashoffset:50;
+  stroke-dasharray:0;
+  }
+
+  }
+  
+ .attendance
+ {
+ 
+ position:relative;
+ top:-88px;
+ 
+ }
+ .attendance p
+ {
+ text-align:center;
+ }
+
+ 
+ .sub
+ {
+ margin-bottom:30px;}
+  .marks
+  {
+  width:90%;
+  margin:0 auto !important;
+  background-color:#f6f6f6;
+  
+ 
+  }
+  .attd
+  {
+  width:90%;
+  margin:0 auto !important;
+  background-color:#f6f6f6;
+  
+ 
+  }
+  
+ .right
+ {
+ float:right;
+ margin-right:7%;
+ }
+ .left
+ {
+ float:left;
+ margin-left:7%;
+ }
+ #svg
+ {
+
+ width:100%;
+ margin:0 auto;
+ }
+  .mids
+  {
+   text-align:center;
+   margin-bottom:10px;
+  
+  
+  }
+  .center
+  {
+  text-align:center;
+  }
+  

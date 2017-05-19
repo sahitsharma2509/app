@@ -1,0 +1,324 @@
+  <!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css1/materialize.min.css"/>
+  <link rel="stylesheet" href="analysis.css" />
+  <link rel="stylesheet" href="viralpost.css" />
+    <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="asPieProgress.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slider.css">
+
+<style>
+.dash-items
+   {
+	
+
+    margin: 20px auto;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	 display: table;
+
+	} 
+	.item-1
+	{
+	width: 70px;
+    height: 70px;
+	    border-radius: 35px;
+		background-color: #d5f5e3  ;
+	transition:1s;
+	-ms-transition:1s;
+	-webkit-transition:1s;
+	background-image:url("notice1.jpg");
+	background-size:cover;
+	-webkit-box-shadow: 5px 8px 15px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 8px 15px -5px rgba(0,0,0,0.75);
+box-shadow: 5px 8px 15px -5px rgba(0,0,0,0.75);
+
+	}
+	
+	
+.item-2
+	{
+width: 70px;
+    height: 70px;
+	    border-radius: 10px;
+	 background-color:  #f9ebea ;
+		transition:1s;
+	-ms-transition:1s;
+	-webkit-transition:1s;
+	background-image:url("attendance-icon.png");
+	background-size:cover;
+     filter:invert(100%);
+     -webkit-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+-moz-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+	}
+	.item-3
+	{
+	width: 70px;
+    height: 70px;
+	    border-radius: 10px;
+	 background-color: #eaecee  ;
+	   filter:invert(100%);
+		transition:1s;
+	-ms-transition:1s;
+	-webkit-transition:1s;
+	background-image:url("grades.png");
+	background-size:contain;
+    
+     -webkit-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+-moz-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+	}
+ .item-4
+	{
+	width: 70px;
+    height: 70px;
+	    border-radius: 35px;
+		background-color: blue ;
+	transition:1s;
+	-ms-transition:1s;
+	-webkit-transition:1s;
+	background-image:url("chat-icon.png");
+	background-size:contain;
+	  filter:invert(100%);
+	 -webkit-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+-moz-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+
+	}
+	.item-5
+	{
+	width: 70px;
+    height: 70px;
+	    border-radius: 35px;
+		background-color:  #f9ebea   ;
+	transition:1s;
+	-ms-transition:1s;
+	-webkit-transition:1s;
+	background-image:url("resources1.png");
+	background-size:contain;
+    filter:invert(100%);
+	 -webkit-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+-moz-box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+box-shadow: 6px 6px 5px -3px rgba(255,255,255,1);
+
+	}
+   
+   span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#dash
+{
+  width:100%;
+  height:35px;
+-webkit-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.75);
+display: table;
+text-align:center;
+font-weight:bold;
+margin:0 auto;
+border-bottom:1px solid #85929e;
+background-color: #85929e  ;
+}
+.center
+{
+	text-align:center;
+
+		padding:0 !important;
+	margin:0 !important;
+}
+#none
+{
+	height:10px;
+	background-color:white;
+	margin:0;
+	border-bottom:1px solid #85929E;
+}
+footer.page-footer {
+    margin-top: 40px !important;
+    padding-top: 0 !important;
+    background-color:  #212f3c ;
+}
+i.material-icons.head-icon {
+    margin: 0 12px 0 0 !important;
+}
+i.material-icons.head-icon.imp {
+    color: black;
+}
+
+</style>
+
+
+
+</head>
+<body>
+   <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+        <img src="hbs.png" style="background-color:black; filter:invert(100%);">
+      </div>
+ 
+ <li><a href="companion.html"><i class="material-icons head-icon imp">person_pin</i> Student Companion</a></li>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">dashboard</i>Dashboard</div>
+      <ul class="collapsible-body">
+        <li><a href="attendance.html"><i class="material-icons head-icon">perm_identity</i>Attendance</a></li>
+        <li><a href="marks.html"><i class="material-icons head-icon">assessment</i>Internal Marks</a></li>
+        <li><a href="notice.html"><i class="material-icons head-icon">announcement</i>Notice</a></li>
+        <li><a href="resources.html"><i class="material-icons head-icon">description</i>Resources</a></li>
+      </ul>
+    </li>
+  
+  </ul>
+        
+
+    <li><a href="student.html">About Us</a></li>
+   <li><a href="">Logout</a></li>
+	  
+	   
+  </ul>
+  <div class="header"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a><p style="text-align:center; position:relative; top:-28px; padding:0; font-size:1.2em; font-weight:bold;color:#F8F9F9;">Student Companion</p></div>
+  <div class="container-s">
+  			
+  
+   <div id="jssor_1"   style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 550px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+		<div id="home"></div>
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 550px; overflow: hidden;">
+            <div class="change" data-p="225.00" style="display: none;">
+                <img data-u="image" src="img1.jpg" />
+				
+			<div class="caption center-align"></div>
+            </div>
+			
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img2.jpg" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                <img data-u="image" src="img3.jpg" />
+            </div>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l color" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r color" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    </div>
+   <div class="row" id="dash">
+   <span>DASHBOARD</span>
+
+
+   </div>
+   <div class="container">
+   <div class="row">
+   
+     <div class="col s6">
+	    <div class="dash-items item-1">
+		
+	    </div> 
+	    <p class="center">Notice</p>
+	 </div>
+
+     <div class="col s6">
+	     <div class="dash-items item-2">
+		
+	    </div> 
+	       <p class="center">Attendance</p>
+	 </div>
+    </div>
+  <div class="row">
+   
+     <div class="col s6">
+	    <div class="dash-items item-3">
+       
+		</div> 
+		   <p class="center">Internal Marks</p>
+	 </div>
+
+     <div class="col s6">
+	     <div class="dash-items item-4">
+	
+	    </div> 
+	       <p class="center">Chat</p>
+	 </div>
+    </div> 
+    <div class="row">
+
+      <div class="col s12">
+        <div class="dash-items item-5">
+
+        </div>
+         <p class="center">Resources</p>
+        </div>
+       </div>
+
+	</div>
+
+<footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 HyderabadBusinessSchool
+            </div>
+          </div>
+        </footer>
+	
+     <script src="jquery.min.js"></script>
+	 
+  <script type="text/javascript" src="jssor.slider.mini.js"></script>
+  <script src="slider.js"></script>
+  
+
+   <script type="text/javascript" src="jquery-asPieProgress.js"></script>
+ <script  src="jquery.keyframes.js"></script>
+ <script src="js1/materialize.min.js"></script>
+ <script type="text/javascript" src="keyframes.js"></script>
+  <script src="main.js"></script>
+ <script type="text/javascript">
+  
+  $(".item-1").click(function()
+  {
+    location.href="notice.html";
+  });
+  $(".item-2").click(function()
+  {
+    location.href="attendance.html";
+  });
+  $(".item-3").click(function()
+  {
+    location.href="marks.html";
+  });
+  $(".item-4").click(function()
+  {
+    location.href="chat.html";
+  });
+  $(".item-5").click(function()
+  {
+    location.href="resource.html";
+  });
+
+ </script>
+ 
+  
+  </body>
+  </html>

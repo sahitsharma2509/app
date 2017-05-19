@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="css1/materialize.min.css"/>
+  <link rel="stylesheet" href="analysis.css" />
+  <link rel="stylesheet" href="viralpost.css" />
+    <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="asPieProgress.css">
+    <link rel="stylesheet" href="main.css">
+
+<style>
+ 
+ .row
+ {
+  width:100%;
+ }
+.stat-bar
+{
+  position:absolute;
+  right:5px;
+  width:50%;
+  height:30px;
+  display:table;
+}
+.col.s6.bar
+{
+  display:table;
+  height:30px;
+  background-color: #85929e ;
+}
+.bars
+{
+  display:table-cell;
+  vertical-align:middle;
+  color:black;
+  padding:4px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.bars.active
+{
+  background-color:#F0F0F0;
+}
+.middle
+{
+  display:table-cell;
+  vertical-align: middle;
+  font-weight:bold;
+  color:#F0F0F0;
+}
+
+.stats
+{
+  height:50px;
+   width:96%;
+  border:1px solid #f0f0f0;
+   background-color:  #626567     ;
+  margin:0 auto;
+  padding:0;
+  display:table;
+}
+ .pie_progress.p {
+      width: 80px;
+      margin: 10px auto;
+    }
+    @media all and (max-width: 768px) {
+      .pie_progress.p {
+        width:60px;
+        position:relative;
+        right:-10%;
+        
+      }
+      .pie_progress__svg {
+  position: relative;
+  display: inline-block;
+width: 100%;
+padding-bottom: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+    }
+    .pie_progress__number.p {
+    font-size: 15px;
+    font-weight:bold;
+    color:#F0F0F0;
+}
+.padding
+{
+  padding-left:30px;
+}
+th,tr,td
+{
+  text-align:center;
+}
+#statistics .row table td
+{
+  font-weight:600;
+}
+i.material-icons.head-icon {
+    margin: 0 12px 0 0 !important;
+}
+i.material-icons.head-icon.imp {
+    color: black;
+}
+</style>
+
+</head>
+<body>
+   <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+        <img src="hbs.png" style="background-color:black; filter:invert(100%);">
+      </div>
+ 
+    </div></li>
+  <li><a href="companion.html"><i class="material-icons head-icon imp">person_pin</i> Student Companion</a></li>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">dashboard</i>Dashboard</div>
+      <ul class="collapsible-body">
+        <li><a href="attendance.html"><i class="material-icons head-icon">perm_identity</i>Attendance</a></li>
+        <li><a href="marks.html"><i class="material-icons head-icon">assessment</i>Internal Marks</a></li>
+        <li><a href="notice.html"><i class="material-icons head-icon">announcement</i>Notice</a></li>
+        <li><a href="resources.html"><i class="material-icons head-icon">description</i>Resources</a></li>
+      </ul>
+    </li>
+  </ul>
+        
+
+    <li><a href="student.html">About Us</a></li>
+   <li><a href="">Logout</a></li>
+     
+  </ul>
+  <div class="header"><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a><p style="text-align:center; margin-top:-12px; font-size:1.2em; font-weight:bold; color:#f8f9f9">Attendance</p></div>
+
+ <div class="tab-2 ">
+      <p class="sname">Sahit Sharma </p>
+  <p class="id">2210314809 | CSE B8 </p>
+  
+  <div class="row">
+  <div class="col s12">
+    <p class="center">Attendance</p>
+   <div class="pie_progress--slow" role="progressbar" data-barcolor="teal" data-barsize="20" aria-valuemin="0" aria-valuemax="100"> 
+          <span class="pie_progress__number">0%</span>
+  </div>
+  </div>
+ 
+  </div>
+  <div class="row">
+  <p style="text-align:center;">No.of classes missed before lunch:43</p>
+  <p style="text-align:center;">No.of classes missed after lunch:45</p>
+  <p style="text-align:center;">No.of days absent:10</p>
+  </div>
+
+  <div class="row">
+     
+       <div class="col s6 bar">
+   <span class="middle">Subjects </span>
+    </div> 
+    <div class="col s6 bar">
+    <div class="stat-bar">
+          <a class="bars first active" id="c-click">Charts</a>
+          <a class="bars second" id="s-click">Statistics</a>
+   </div>
+  </div>
+ 
+  </div>
+  </div>
+  <div id="charts">
+  <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS601</span>  
+          <div class="pie_progress p" id="xyz" role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+   <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS602</span>  
+          <div class="pie_progress p"  role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+   <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS603</span>  
+          <div class="pie_progress p"  role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+   <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS604</span>  
+          <div class="pie_progress p"  role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+   <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS605</span>  
+          <div class="pie_progress p"  role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+   <div class="row">
+
+       <div class="stats s1">
+         <span class="middle padding"> EURCS606</span>  
+          <div class="pie_progress p"  role="progressbar" data-goal="100" aria-valuemin="0" aria-valuemax="100">
+          <span class="pie_progress__number p">0%</span>
+        </div>
+       </div>
+  
+  </div>
+
+ </div>
+ <div id="statistics" class="hide">
+  <div class="row">
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>Subject</th>
+              <th>Attended</th>
+              <th>Total</th>
+              <th>Percentage</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>EURCS601</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>EURCS602</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+          <tr>
+            <td>EURCS603</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+           <tr>
+            <td>EURCS604</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+           <tr>
+            <td>EURCS605</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+           <tr>
+            <td>EURCS606</td>
+            <td>350</td>
+            <td>500</td>
+            <td>75%</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+ </div>
+
+
+
+
+   <script src="jquery.min.js"></script>
+   <script type="text/javascript" src="jquery-asPieProgress.js"></script>
+ <script  src="jquery.keyframes.js"></script>
+ <script src="js1/materialize.min.js"></script>
+ <script type="text/javascript" src="keyframes.js"></script>
+  <script src="main.js"></script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $('.pie_progress').asPieProgress({
+        namespace: 'pie_progress'
+      });
+      // Example with grater loading time - loads longer
+   
+      // Example with grater loading time - loads longer
+     
+    
+     $('.p').asPieProgress('go', '60%');
+        $('#xyz').asPieProgress('go', '50%');
+      
+      $("#s-click").click(function()
+    {
+      $("#statistics").removeClass("hide");
+      $("#charts").addClass("hide");
+         $("#c-click").removeClass("active");
+      $("#s-click").addClass("active");
+    });
+        $("#c-click").click(function()
+    {
+      $("#statistics").addClass("hide");
+      $("#charts").removeClass("hide");
+        $("#c-click").addClass("active");
+          $("#s-click").removeClass("active");
+    });
+
+    });
+  </script>
+ <script type="text/javascript">
+
+ </script>
+  
+  </body>
+  </html>

@@ -1,0 +1,146 @@
+#container
+  {
+
+  	width:100%;
+  	
+  }
+  #messenger
+  {
+
+  position:relative;
+  margin:auto;
+  width:300px;
+  height:450px;
+  border:1px solid #E2E2E2;
+   background-color:#e2e2e2;
+  }
+#chatbox
+{ 
+
+  width:300px;
+  height:400px;
+  overflow:auto;
+ }
+ #title
+ {
+ 	text-align:center;
+ }
+ #chatbox li
+ {
+    clear:both;
+ 	list-style:none;
+ 	padding:0px;
+ 	margin:0px;
+ }
+ #chatbox
+ {
+ 	padding:0px;
+ 	margin:0px;
+
+ }
+ .left-1
+ {
+ 	float:left;
+ 	clear:both;
+ } 
+ .right-1
+ {
+ float:right;
+ clear:both;
+ }
+ .left-1 p
+ {
+color:white;
+max-width:180px;
+margin:5px;
+margin-left:50px !important;
+background-color:#4f78df;
+border-radius:20px;
+font-size:0.9em;
+padding:8px 10px 8px 10px;
+ }
+ .right-1 p
+{
+max-width:220px;
+background-color: #35b8bc ;
+border-radius:20px;
+color:white;
+margin:5px;
+font-size:0.9em;
+padding:8px 10px 8px 10px;
+}
+ .icon-1
+ {
+  	height:32px;
+ 	width:32px;
+ 	float:left;
+ 	position:relative;
+    margin-left:10px;
+    margin-right:15px;
+    border-radius:16px;
+    background-image:url("messi5.jpg");
+ 	background-repeat:no-repeat;
+ 	background-size:cover;
+ }
+ .icon-2
+ {
+
+ }
+input
+ {
+position:absolute;
+z-index:100;
+ padding:10px;
+ bottom:10px;
+ right:24px;
+border-radius:20px;
+border:1px solid #eeeeee ;
+ width:90%;
+ }
+ .date
+ {
+ 	margin:10px 10px;
+ 	text-align:center;
+
+ }
+ #header
+ {
+ 	height:50px;
+    background-color:white;
+ }
+ .name
+ {
+  margin-left:50px;
+ }
+ .profile-img
+ {   
+ 	height:32px;
+ 	width:32px;
+    float:right;
+    border-radius:16px;
+    background-image:url("messi5.jpg");
+ 	background-repeat:no-repeat;
+ 	background-size:cover;
+ 	margin:8px 10px 8px 0;
+ }
+
+.lol
+{
+	position:relative;
+	top:10px;
+	left:20px;
+	margin-right:10px;
+}
+.name
+{   
+	position:relative;
+	top:10px;
+	left:-15px;
+    font-size:1.3em;
+    font-weight:600;
+    color:#656565;
+}
+#chatbox li:last-child
+{
+	margin-bottom:55px !important;
+}
